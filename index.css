@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: url('https://image.ibb.co/kLdycy/DSC00973.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  margin-top: 5px;
+  color: white;
+}
+
+p, .answerOption, .question {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 400px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 640px) {
+  p, .answerOption {
+    font-size: 24px;
+  }
+  .question, h2 {
+    font-size: 28px;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 500px;
+  }
+  .container {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 50%;
+  }
+  header {
+    margin-top: 40px;
+  }
+}
+
+.container {
+  background: rgb(255, 255, 255);
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  height: auto;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=radio] {
+  display: block;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  width: 1px;
+  height: 1px;
+} 
+
+.answerOption {
+  display: block;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid rgb(43, 42, 42);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.answerOption:hover {
+  background-color: rgb(43, 42, 42);
+  color: white;
+}
+
+input[type=radio]:checked + label {
+  background-color: rgb(43, 42, 42);
+  color: white;
+}
+
+input[type=radio]:focus + label {
+  background-color: rgb(43, 42, 42);
+  color: white;
+}
+
+.button, .submit-button {
+  background-color: rgb(247, 248, 252);
+  border: 2px solid black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.button:hover, .submit-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.button:active, .submit-button:active {
+  background-color: lavender;
+  color: black;
+}
+
+fieldset {
+  border: none;
+}
